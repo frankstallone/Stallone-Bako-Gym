@@ -1,0 +1,21 @@
+.center[data-center='hero'] {
+  max-inline-size: 100vw !important;
+}
+.cover[data-cover='hero'] {
+  padding: 0;
+}
+
+.cover[data-location='home'] > :first-child {
+  margin-block: auto;
+  /* margin-block-start: 20vh; */
+}
+
+@media (min-width: 700px) {
+  .cover[data-location='home'] > :first-child {
+    margin-block-start: 20vh;
+  }
+}
+
+.grid[data-grid-min-item='s'] {
+  --grid-min-item-size: 300px;
+}

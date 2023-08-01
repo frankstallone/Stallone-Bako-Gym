@@ -1,0 +1,9 @@
+.box {
+  padding: var(--padding, var(--space-s));
+  border: var(--border-thin) solid;
+  color: var(--spot-color-text, var(--color-dark));
+}
+
+.box * {
+  color: inherit;
+}
