@@ -1,18 +1,20 @@
-.center[data-center='hero'] {
-  max-inline-size: 100vw !important;
-}
-.cover[data-cover='hero'] {
-  padding: 0;
-}
-
-.cover[data-location='home'] > :first-child {
-  margin-block: auto;
-  /* margin-block-start: 20vh; */
+#hero {
+  mix-blend-mode: multiply;
+  filter: grayscale(30%);
+  opacity: 0.4;
+  width: auto;
+  max-width: initial;
+  max-height: 100dvh;
 }
 
 @media (min-width: 700px) {
-  .cover[data-location='home'] > :first-child {
-    margin-block-start: 20vh;
+  #hero {
+    max-height: 200dvh !important;
+  }
+}
+@media (min-width: 1400px) {
+  #hero {
+    max-height: 300dvh !important;
   }
 }
 
