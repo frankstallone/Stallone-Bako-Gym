@@ -1,5 +1,11 @@
 /* Utility classes */
 
+/* Text */
+
+.color-loud-text {
+  color: var(--color-loud);
+}
+
 /* Width */
 
 .max-inline-size\:measure-lg {
@@ -25,8 +31,8 @@
 /* Buttons */
 
 .button[data-color='primary'] {
-  --spot-color-text: var(--bronze900);
-  --spot-color: var(--bronzeLoud);
+  --spot-color-text: var(--color-light);
+  --spot-color: var(--color-loud);
 }
 
 .button[data-color='secondary'] {
