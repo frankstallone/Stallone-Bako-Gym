@@ -136,34 +136,14 @@ form > p label {
 
 input,
 textarea {
-  border-radius: 4px;
-  border: 1px solid var(--gray700);
+  border: 1px solid var(--gray800);
   padding-block: var(--space-2xs);
   padding-inline: var(--space-xs);
 }
 
 input:focus,
 textarea:focus {
-  outline: 2px solid var(--warmbreeze400);
-}
-
-.button a {
-  color: var(--color-dark);
-  font-size: var(--step--1);
-  display: inline-block;
-  text-decoration: none;
-}
-
-.emphasized-header {
-  clip-path: polygon(
-    var(--skew-s) 0%,
-    100% 0%,
-    calc(100% - var(--skew-s)) 100%,
-    0% 100%
-  );
-  background: var(--color-loud);
-  color: var(--color-light);
-  padding: var(--space-xs) var(--space-xl);
+  outline: 2px solid var(--gray1100);
 }
 
 /* Gallery */

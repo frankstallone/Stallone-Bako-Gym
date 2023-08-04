@@ -73,8 +73,8 @@
   --line-height-small: calc(var(--ratio) * 0.7);
   --font-base: 'Public Sans', sans-serif;
   --font-base-weight: 300;
-  --font-emphasis-weight: 600;
-  --font-display: 'Public Sans', sans-serif;
+  --font-emphasis-weight: 700;
+  --font-display: 'Barlow Condensed', sans-serif;
   --gutter: var(--space-s-m);
   --border-radius: var(--step-4);
   --transition-base: 250ms ease-in-out;
@@ -84,6 +84,7 @@
   --tracking: -0.05ch;
   --tracking-s: -0.05ch;
   --skew-s: 1.5rem;
+  --skew-m: 2rem;
 
   /* @link https://utopia.fyi/space/calculator/?c=320,16,1.2,1240,20,1.25,7,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l|l-2xl&g=s,l,xl,12 */
   --space-3xs: clamp(0.25rem, calc(0.23rem + 0.11vw), 0.31rem);

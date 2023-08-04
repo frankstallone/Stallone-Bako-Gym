@@ -27,11 +27,11 @@ import footerImg from '../assets/geo-specific-footer-kids.jpg';
         <nav>
           <ul
             role="list"
-            class="cluster justify-center font-weight-emphasis uppercase"
+            class="cluster justify-center font-weight-emphasis font-display uppercase"
             style="--gap: var(--space-l);"
           >
             <li class="button"><a href="#contact">Join us</a></li>
-            <li class="button"><a href="#free-trial">Free trial</a></li>
+            <li class="button"><a href="#benefits">Benefits</a></li>
           </ul>
         </nav>
       </header>
@@ -67,8 +67,8 @@ import footerImg from '../assets/geo-specific-footer-kids.jpg';
       style="--gap: 0; --spot-color: var(--gray200);"
       id="main"
     >
-      <div class="box flow prose">
-        <h2>Our Head Instructor</h2>
+      <div class="box flow prose" id="instructor">
+        <h2 class="uppercase">Our Head Instructor</h2>
         <p>
           Devhonte 'Bones' Johnson is a&nbsp;black belt under Unity Jiu Jitsu
           Professor&nbsp;Murilo Santana. Regarded as one of the top American
@@ -98,26 +98,39 @@ import footerImg from '../assets/geo-specific-footer-kids.jpg';
         format="avif"
       />
     </div>
-    <div class="region wrapper flow">
-      <div class="grid">
-        <div class="box flow prose" style="--spot-color: var(--gray200);">
-          <h2>Responsibility</h2>
+    <div class="region wrapper flow" id="benefits">
+      <div
+        class="grid text-center"
+        data-layout="50-50"
+        style="--grid-min-item-size: 250px;"
+      >
+        <div
+          class="box flow prose clip-right"
+          style="--spot-color: var(--gray200);"
+        >
+          <h2 class="uppercase">Responsibility</h2>
           <p>Become the best version of yourself.</p>
         </div>
-        <div class="box flow prose" style="--spot-color: var(--gray200);">
-          <h2>Respect</h2>
+        <div
+          class="box flow prose clip-right"
+          style="--spot-color: var(--gray200);"
+        >
+          <h2 class="uppercase">Respect</h2>
           <p>Appreciate those around you.</p>
         </div>
-        <div class="box flow prose" style="--spot-color: var(--gray200);">
-          <h2>Health</h2>
+        <div
+          class="box flow prose clip-right"
+          style="--spot-color: var(--gray200);"
+        >
+          <h2 class="uppercase">Health</h2>
           <p>Stay in shape.</p>
         </div>
       </div>
     </div>
-    <div class="region" style="--spot-color: var(--gray200);">
+    <div class="region" style="--spot-color: var(--gray200);" id="schedule">
       <div class="wrapper flow" style="--flow-space: var(--space-l);">
         <div class="switcher">
-          <h2>Our Schedule</h2>
+          <h2 class="uppercase">Our Schedule</h2>
           <p>
             Email us at frank@stallone.dev or call (908) 304-2855 for membership
             information.
@@ -136,15 +149,22 @@ import footerImg from '../assets/geo-specific-footer-kids.jpg';
         />
       </div>
     </div>
-    <div class="region">
+    <div class="region" id="difference">
       <div class="wrapper flow prose" style="--flow-space: var(--space-l);">
-        <h2>Our Difference</h2>
+        <h2 class="uppercase">Our Difference</h2>
         <p>
           Why should you try Stallone &amp; Bako instead of the other options in
           your home town?
         </p>
-        <div class="switcher">
-          <div class="flow prose">
+        <div
+          class="grid"
+          data-layout="50-50"
+          style="--grid-min-item-size: 250px;"
+        >
+          <div
+            class="box flow prose clip-right"
+            style="--spot-color: var(--gray200);"
+          >
             <h3>Beginners at Stallone &amp; Bako</h3>
             <ul>
               <li>High level, detailed instruction</li>
@@ -154,7 +174,10 @@ import footerImg from '../assets/geo-specific-footer-kids.jpg';
               <li>Culture that builds strong people on and off the mats</li>
             </ul>
           </div>
-          <div class="flow prose">
+          <div
+            class="box flow prose clip-right"
+            style="--spot-color: var(--gray200);"
+          >
             <h3>Beginners at Other Gyms</h3>
             <ul>
               <li>Learn whatever the coach saw on youtube</li>
@@ -168,6 +191,52 @@ import footerImg from '../assets/geo-specific-footer-kids.jpg';
               </li>
               <li>Coaches that look at you as a commodity</li>
             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="region" style="--spot-color: var(--gray200);" id="contact">
+      <div class="wrapper flow prose" style="--flow-space: var(--space-l);">
+        <div class="switcher">
+          <div class="flow prose">
+            <h2 class="uppercase">Sign up today</h2>
+            <p>
+              Find out why everyone is saying Brazilian Jiu Jitsu is the #1
+              after school activity in the United States.
+            </p>
+          </div>
+          <div class="flow prose">
+            <form
+              name="main"
+              netlify-honeypot="bot-field"
+              class="switcher"
+              method="POST"
+              data-netlify="true"
+              action="/"
+            >
+              <input type="hidden" name="subject" value="🦾 New Recruit" />
+              <p class="hidden">
+                <label for="bot-field">Do you like delicious treats?</label>
+                <input name="bot-field" id="bot-field" />
+              </p>
+              <span class="stack">
+                <label for="name">Kid(s) names</label>
+                <input id="name" type="text" required />
+              </span>
+              <span class="stack">
+                <label for="email">Email</label>
+                <input id="email" type="email" required />
+              </span>
+              <span class="stack">
+                <label for="tel">Phone number</label>
+                <input id="tel" type="tel" required />
+              </span>
+              <button
+                type="submit"
+                class="submit-button clip-right"
+                style="--spot-color: var(--gray1200);">Sign up today</button
+              >
+            </form>
           </div>
         </div>
       </div>
@@ -207,7 +276,7 @@ import footerImg from '../assets/geo-specific-footer-kids.jpg';
             />
           </div>
           <div class="flow center">
-            <h2 id="contact">Contact Us</h2>
+            <h2 class="uppercase">Contact Us</h2>
             <p>62 Barkers Mill Rd. <br />Hackettstown NJ, 07840</p>
             <p><a href="+tel=9083042855">(908) 304-2855</a></p>
             <p>

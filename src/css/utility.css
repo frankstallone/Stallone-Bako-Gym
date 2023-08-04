@@ -1,9 +1,48 @@
 /* Utility classes */
 
+/* Main navigation buttons */
+.button a {
+  color: var(--gray1200);
+  font-size: var(--step-1);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button a:hover,
+.button a:focus,
+.button a:active {
+  color: var(--gray1100);
+  text-decoration: underline;
+  text-decoration-thickness: max(0.15em, 1px);
+}
+
+/* Clips */
+
+.clip-right {
+  clip-path: polygon(
+    var(--skew-s) 0%,
+    100% 0%,
+    calc(100% - var(--skew-s)) 100%,
+    0% 100%
+  );
+}
+
 /* Text */
 
 .color-loud-text {
   color: var(--color-loud);
+}
+
+.emphasized-header {
+  clip-path: polygon(
+    var(--skew-s) 0%,
+    100% 0%,
+    calc(100% - var(--skew-s)) 100%,
+    0% 100%
+  );
+  background: var(--color-loud);
+  color: var(--color-light);
+  padding: var(--space-xs) var(--space-xl);
 }
 
 /* Width */
@@ -30,14 +69,12 @@
 
 /* Buttons */
 
-.button[data-color='primary'] {
-  --spot-color-text: var(--color-light);
-  --spot-color: var(--color-loud);
-}
-
-.button[data-color='secondary'] {
-  --spot-color-text: var(--wine100);
-  --spot-color: var(--wine800);
+.submit-button {
+  border: none;
+  background-color: var(--spot-color, var(--gray1200));
+  color: var(--gray100);
+  padding-inline: var(--space-m);
+  padding-block: var(--space-s);
 }
 
 /* Region */
@@ -239,12 +276,10 @@ Utilities for controlling how grid items are aligned along their inline axis. */
 /* Margin */
 
 .mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 .my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-block: auto;
 }
 
 /* Font */
@@ -263,6 +298,10 @@ Utilities for controlling how grid items are aligned along their inline axis. */
 
 .font-weight-emphasis {
   font-weight: var(--font-emphasis-weight);
+}
+
+.font-display {
+  font-family: var(--font-display);
 }
 
 .step--2 {
