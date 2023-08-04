@@ -1,6 +1,7 @@
 .grid {
   display: grid;
-  grid-gap: var(--grid-gap, var(--space-s-m));
+  grid-gap: var(--gap, var(--space-s-m));
+  background-color: var(--spot-color, transparent);
 }
 
 @supports (width: min(400px, 100%)) {

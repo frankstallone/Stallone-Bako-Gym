@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--gap, var(--space-s));
+  background-color: var(--spot-color, transparent);
   --threshold: 30rem;
 }
 

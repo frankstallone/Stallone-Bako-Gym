@@ -91,14 +91,6 @@
 
 /* Grid */
 
-.grid[data-gap='s-m'] {
-  --grid-gap: var(--space-s-m);
-}
-
-.grid[data-gap='none'] {
-  --grid-gap: 0;
-}
-
 .grid[data-layout='50-50'] {
   --grid-placement: auto-fit;
 }
@@ -267,6 +259,10 @@ Utilities for controlling how grid items are aligned along their inline axis. */
 
 .font-weight-base {
   font-weight: var(--font-weight-base);
+}
+
+.font-weight-emphasis {
+  font-weight: var(--font-emphasis-weight);
 }
 
 .step--2 {
