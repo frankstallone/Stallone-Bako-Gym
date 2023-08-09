@@ -51,6 +51,11 @@ We're using [Every Layout](https://every-layout.dev/rudiments/units/#utility-cla
 
 PurgeCSS is used to remove unused CSS classes from the final build.
 
+## ⚙️ Components
+
+- `<HeroTallVideo>` is for 9:16 videos
+- `<HeroWideVideo>` is for 16:9 videos
+
 ## 🧞 Commands
 
 All commands are run from the root of the project, from a terminal:
